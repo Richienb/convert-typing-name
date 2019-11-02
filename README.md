@@ -1,41 +1,51 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/convert-typing-name/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/convert-typing-name)
 
 My awesome module.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/convert-typing-name.png)](https://npmjs.com/package/convert-typing-name)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install convert-typing-name
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const { fromTyping, toTyping } = require(".");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+fromTyping("@types/a");
+//=> "a"
+
+fromTyping("@types/a__b");
+//=> "@a/b"
+
+toTyping("a");
+//=> "@types/a"
+
+toTyping("@a/b");
+//=> "@types/a__b"
 ```
 
 ## API
 
-### theModule(input, options?)
+### fromTyping(name)
 
-#### input
+Convert the name of a Typescript typings package to it's npm package counterpart.
+
+#### name
 
 Type: `string`
 
-Lorem ipsum.
+The typings package name to convert.
 
-#### options
+### toTyping(name)
 
-Type: `object`
+Convert the name of a npm package to it's Typescript typings package counterpart.
 
-##### postfix
+#### name
 
-Type: `string`\
-Default: `rainbows`
+Type: `string`
 
-Lorem ipsum.
+The npm package name to convert.

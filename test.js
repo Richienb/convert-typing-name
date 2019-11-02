@@ -1,13 +1,12 @@
 import test from "ava"
-import theModule from "."
+import { fromTyping, toTyping } from "."
 
-test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
+test("from typing", (t) => {
+    t.is(fromTyping("@types/a"), "a")
+    t.is(fromTyping("@types/a__b"), "@a/b")
+})
 
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+test("to typing", (t) => {
+    t.is(toTyping("a"), "@types/a")
+    t.is(toTyping("@a/b"), "@types/a__b")
 })

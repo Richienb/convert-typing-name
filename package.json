@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "convert-typing-name",
     "version": "0.0.0",
     "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "repository": "https://github.com/Richienb/convert-typing-name.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,14 +11,18 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=6"
     },
     "scripts": {
         "lint": "eslint .",
         "test": "yarn lint && ava"
     },
     "keywords": [],
-    "dependencies": {},
+    "dependencies": {
+        "lodash": "^4.17.15",
+        "named-regexp-groups": "^1.0.5",
+        "parse-pkg-name": "^1.0.0"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint": "^6.5.1",
