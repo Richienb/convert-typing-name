@@ -1,7 +1,7 @@
 {
     "name": "convert-typing-name",
     "version": "1.0.0",
-    "description": "My awesome module.",
+    "description": "Convert the name of a Typescript typings package to it's npm package counterpart.",
     "repository": "https://github.com/Richienb/convert-typing-name.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
@@ -17,7 +17,10 @@
         "lint": "eslint .",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
+    "keywords": [
+        "typing",
+        "convert"
+    ],
     "dependencies": {
         "lodash": "^4.17.15",
         "named-regexp-groups": "^1.0.5",

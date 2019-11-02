@@ -1,6 +1,6 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/convert-typing-name/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/convert-typing-name)
+# Convert typing name [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/convert-typing-name/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/convert-typing-name)
 
-My awesome module.
+Convert the name of a Typescript typings package to it's npm package counterpart.
 
 [![NPM Badge](https://nodei.co/npm/convert-typing-name.png)](https://npmjs.com/package/convert-typing-name)
 
@@ -13,7 +13,7 @@ npm install convert-typing-name
 ## Usage
 
 ```js
-const { fromTyping, toTyping } = require(".");
+const { fromTyping, toTyping } = require("convert-typing-name");
 
 fromTyping("@types/a");
 //=> "a"
