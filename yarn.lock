@@ -2564,6 +2564,13 @@ os-tmpdir@^1.0.1, os-tmpdir@~1.0.2:
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
 
+ow@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/ow/-/ow-0.15.0.tgz#0d928046989422d7b06f0d6f20017016a0373df5"
+  integrity sha512-iHHqr8OXsZzBjUkOVxfSR8opBhEhdQUGE4mxZEWehQawHxhCcnnGXrfu6+HhLG3XTK+oHRD/dlfGwNdY9HTHxQ==
+  dependencies:
+    type-fest "^0.8.1"
+
 p-cancelable@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/p-cancelable/-/p-cancelable-1.1.0.tgz#d078d15a3af409220c886f1d9a0ca2e441ab26cc"
@@ -2687,11 +2694,12 @@ parse-package-name@^0.1.0:
   integrity sha1-P0Tdg4/rTCvkvzGLrkR313BrreQ=
 
 parse-pkg-name@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/parse-pkg-name/-/parse-pkg-name-1.0.0.tgz#5e8ca54fa94077e68d4c89af422e7bf143783478"
-  integrity sha512-biDKhtz+mewRS7L7vkVOb1ru2I8VGDLHSlMFQ33D5qjfiI8RxdwEOyyAa7OLcNspK3cRxgCgs9kY18yFTKXxRw==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/parse-pkg-name/-/parse-pkg-name-1.1.0.tgz#c64768591fcf969cb0425a712cfc4941d2970a70"
+  integrity sha512-0SKKBGAltPi8WCT9ELTkBBinGRwJNa7VVHXENd3TD1gKAVPX5phhlHobuQb70G0PYvjWimfGC5UxBq8gBCh9SA==
   dependencies:
     named-regexp-groups "^1.0.5"
+    ow "^0.15.0"
     parse-package-name "^0.1.0"
 
 path-exists@^3.0.0:
