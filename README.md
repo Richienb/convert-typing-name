@@ -13,24 +13,34 @@ npm install convert-typing-name
 ## Usage
 
 ```js
-const { fromTyping, toTyping } = require("convert-typing-name");
+const typingName = require("convert-typing-name");
 
-fromTyping("@types/a");
-//=> "a"
-
-fromTyping("@types/a__b");
-//=> "@a/b"
-
-toTyping("a");
+typingName("a");
 //=> "@types/a"
 
-toTyping("@a/b");
+typingName("@a/b");
 //=> "@types/a__b"
+
+typingName.from("@types/a");
+//=> "a"
+
+typingName.from("@types/a__b");
+//=> "@a/b"
 ```
 
 ## API
 
-### fromTyping(name)
+### typingName(name)
+
+Convert the name of a npm package to it's Typescript typings package counterpart.
+
+#### name
+
+Type: `string`
+
+The npm package name to convert.
+
+### typingName.from(name)
 
 Convert the name of a Typescript typings package to it's npm package counterpart.
 
@@ -40,12 +50,12 @@ Type: `string`
 
 The typings package name to convert.
 
-### toTyping(name)
+## Similar
 
-Convert the name of a npm package to it's Typescript typings package counterpart.
+- [parse-pkg-name](https://github.com/Richienb/parse-pkg-name) - Parse and stringify package names.
 
-#### name
+## Migrating from 1.x
 
-Type: `string`
-
-The npm package name to convert.
+- A minimum version of Node.js 10 is required.
+- `typingName.toTyping` is now `typingName`
+- `typingName.fromTyping` is now `typingName.from`

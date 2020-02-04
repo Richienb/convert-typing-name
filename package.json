@@ -11,27 +11,31 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=6"
+        "node": ">=10"
     },
     "scripts": {
-        "lint": "eslint .",
+        "lint": "xo",
         "test": "yarn lint && ava"
     },
     "keywords": [
         "typing",
-        "convert"
+        "convert",
+        "name",
+        "typescript"
     ],
     "dependencies": {
-        "lodash": "^4.17.15",
-        "named-regexp-groups": "^1.0.5",
-        "parse-pkg-name": "^1.0.0"
+        "ow": "^0.15.1",
+        "parse-pkg-name": "^2.0.0"
     },
     "devDependencies": {
-        "ava": "^2.4.0",
-        "eslint": "^6.6.0",
-        "eslint-config-richienb": "^0.2.0"
+        "ava": "^3.2.0",
+        "eslint-config-richienb": "^0.3.0",
+        "xo": "^0.25.3"
     },
-    "eslintConfig": {
+    "resolutions": {
+        "eslint": "^6.8.0"
+    },
+    "xo": {
         "extends": "richienb/node"
     }
 }
