@@ -1,6 +1,6 @@
 {
     "name": "convert-typing-name",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "description": "Convert the name of a Typescript typings package to it's npm package counterpart.",
     "repository": "https://github.com/Richienb/convert-typing-name.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
