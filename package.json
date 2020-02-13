@@ -24,7 +24,7 @@
         "typescript"
     ],
     "dependencies": {
-        "ow": "^0.15.1",
+        "ow": "^0.16.0",
         "parse-pkg-name": "^2.0.0"
     },
     "devDependencies": {
